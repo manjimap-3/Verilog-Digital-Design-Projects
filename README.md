@@ -1,5 +1,6 @@
 # Verilog-Digital-Design-Projects
 A comprehensive collection of digital design projects implemented in Verilog, showcasing fundamental to advanced concepts in digital circuit design.
+
 🚀 About
 This repository contains my learning journey through digital design using Verilog HDL. Each project includes:
 
