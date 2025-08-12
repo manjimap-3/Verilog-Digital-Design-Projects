@@ -1,85 +1,61 @@
-# Verilog-Digital-Design-Projects
-A comprehensive collection of digital design projects implemented in Verilog, showcasing fundamental to advanced concepts in digital circuit design.
+# Verilog Digital Design Projects
 
-🚀 About
+A comprehensive collection of digital design projects implemented in Verilog HDL, showcasing fundamental to advanced concepts in digital circuit design.
 
-This repository contains my learning journey through digital design using Verilog HDL. Each project includes:
+## 🚀 About
 
-✅Verilog code
+This repository documents my learning journey through digital design using Verilog HDL. Each project includes:
 
-✅Comprehensive testbenches
+- Verilog source code  
+- Comprehensive testbenches  
+- Documentation and simulation results  
 
-✅Documentation and simulation results
+Projects progress from basic logic gates to complex digital systems, providing hands-on examples of core digital design principles.
 
-✅Progressive complexity from basic gates to complex systems
+## 📁 Project Categories
 
-📁 Project Categories
+### 🔢 Arithmetic Circuits
+- **Full Adder** — Basic building block for arithmetic operations  
+- **Half Adder** — Simple binary addition  
+- **4-bit Adder** — Multi-bit arithmetic unit  
+- **Subtractor** — Binary subtraction implementation  
 
-🔢 Arithmetic Circuits
+### 🔀 Combinational Logic
+- **Multiplexer (MUX)** — Data selection circuits  
+- **Demultiplexer (DEMUX)** — Data distribution circuits  
+- **Encoders/Decoders** — Code conversion circuits  
+- **Binary to Gray Converter** — Code transformation  
 
-✅Full Adder - Basic building block for arithmetic operations
+### ⏰ Sequential Circuits
+- **Flip-Flops** — T, JK flip-flop implementations  
+- **Shift Registers** — SIPO, PISO, PIPO configurations  
+- **Counters** — Ring counter, Johnson counter, Modulo counter  
+- **State Machines** — Moore and Mealy FSM examples  
 
-✅Half Adder - Simple binary addition
+### 💾 Memory Designs
+- **SRAM** — Static Random Access Memory  
+- **FIFO** — First-In-First-Out buffer  
 
-✅4-bit Adder - Multi-bit arithmetic unit
+### 🧮 Advanced Projects
+- **ALU** — Arithmetic Logic Unit  
+- **FSM Designs** — Complex state machine implementations  
 
-✅Subtractor - Binary subtraction implementation
+## 🛠 Tools Used
 
-🔀 Combinational Logic
+- Simulator: ModelSim / QuestaSim  
+- Language: Verilog HDL  
+- Version Control: Git & GitHub  
 
-✅Multiplexer (MUX) - Data selection circuits
+## 📧 Contact
 
-✅Demultiplexer (DEMUX) - Data distribution circuits
+**Name:** Manjima P  
+**Email:** manjimap3@gmail.com  
+**LinkedIn:** [https://www.linkedin.com/in/manjima-p/](https://www.linkedin.com/in/manjima-p/)
 
-✅Encoders/Decoders - Code conversion circuits
+## 📄 License
 
-✅Binary to Gray Converter - Code transformation
+This project is open source and available under the [MIT License](LICENSE).
 
-⏰ Sequential Circuits
+---
 
-✅Flip-Flops - T, JK flip-flop implementations
-
-✅Shift Registers - SIPO, PISO, PIPO configurations
-
-✅Counters - Ring counter, Johnson counter, Modulo counter
-
-✅State Machines - Moore and Mealy FSM examples
-
-💾 Memory Designs
-
-✅SRAM - Static Random Access Memory
-
-✅FIFO - First-In-First-Out buffer
-
-🧮 Advanced Projects
-
-✅ALU - Arithmetic Logic Unit
-
-✅FSM Designs - Complex state machine implementations
-
-🛠️ Tools Used
-
-Simulator: ModelSim/QuestaSim
-
-Language: Verilog HDL
-
-Version Control: Git/GitHub
-
-🏃‍♂️ How to Run
-Prerequisites
-
-Verilog simulator (ModelSim, Icarus Verilog, or Vivado)
-Git for version control
-
-📧 Contact
-
-Name: Manjima P
-
-Email: manjimap3@gmail.com
-
-LinkedIn: https://www.linkedin.com/in/manjima-p/
-
-📄 License
-This project is open source and available under the MIT License.
-
-⭐ Star this repository if you found it helpful!
+⭐ Star this repository if you find it helpful!
