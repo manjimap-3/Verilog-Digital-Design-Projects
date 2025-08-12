@@ -2,6 +2,7 @@
 A comprehensive collection of digital design projects implemented in Verilog, showcasing fundamental to advanced concepts in digital circuit design.
 
 🚀 About
+
 This repository contains my learning journey through digital design using Verilog HDL. Each project includes:
 
 Verilog code
@@ -10,6 +11,7 @@ Documentation and simulation results
 Progressive complexity from basic gates to complex systems
 
 📁 Project Categories
+
 🔢 Arithmetic Circuits
 
 Full Adder - Basic building block for arithmetic operations
