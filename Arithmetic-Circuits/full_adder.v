@@ -29,15 +29,9 @@ module full_adder_structural(
     output sum, cout
 );
     wire w1, w2, w3;
-
-    // Half Adder 1
     xor (w1, a, b);        
     and (w2, a, b);        
-
-    // Half Adder 2
     xor (sum, w1, cin);    
     and (w3, w1, cin);     
-
-    // Final carry
     or (cout, w2, w3);
 endmodule
