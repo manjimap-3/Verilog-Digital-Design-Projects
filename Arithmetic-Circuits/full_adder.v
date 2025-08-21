@@ -1,19 +1,43 @@
-module full_adder(
-    input a,b,cin,
-    output sum, cout
+// ---------------------------
+// 1. Behavioral Modeling
+// ---------------------------
+module full_adder_behavioral(
+    input a, b, cin,
+    output reg sum, cout
 );
-    assign sum= a ^ b ^ cin;
-    assign cout= (a & b) | (b & cin) | (a & cin);
+    always @(*) begin
+        {cout, sum} = a + b + cin;  
+    end
 endmodule
 
-module adder_4bit(input [3:0]a,b,
-                  input cin, output [3:0] sum, output cout);
+// ---------------------------
+// 2. Dataflow (RTL) Modeling
+// ---------------------------
+module full_adder_dataflow(
+    input a, b, cin,
+    output sum, cout
+);
+    assign sum  = a ^ b ^ cin;                        
+    assign cout = (a & b) | (b & cin) | (a & cin);    
+endmodule
 
-wire c1,c2,c3;
+// ---------------------------
+// 3. Structural Modeling
+// ---------------------------
+module full_adder_structural(
+    input a, b, cin,
+    output sum, cout
+);
+    wire w1, w2, w3;
 
-full_adder fa1( .a(a[0]), .b(b[0]), .cin(cin), .sum(sum[0]), .cout(c1));
-full_adder fa2( .a(a[1]), .b(b[1]), .cin(c1), .sum(sum[1]), .cout(c2));
-full_adder fa3( .a(a[2]), .b(b[2]), .cin(c2), .sum(sum[2]), .cout(c3));
-full_adder fa4( .a(a[3]), .b(b[3]), .cin(c3), .sum(sum[3]), .cout(cout));
+    // Half Adder 1
+    xor (w1, a, b);        
+    and (w2, a, b);        
 
+    // Half Adder 2
+    xor (sum, w1, cin);    
+    and (w3, w1, cin);     
+
+    // Final carry
+    or (cout, w2, w3);
 endmodule
