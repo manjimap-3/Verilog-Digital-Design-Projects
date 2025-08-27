@@ -1,6 +1,3 @@
-// ---------------------------
-// 1. Behavioral Modeling
-// ---------------------------
 module full_adder_behavioral(
     input a, b, cin,
     output reg sum, cout
@@ -10,9 +7,7 @@ module full_adder_behavioral(
     end
 endmodule
 
-// ---------------------------
-// 2. Dataflow (RTL) Modeling
-// ---------------------------
+
 module full_adder_dataflow(
     input a, b, cin,
     output sum, cout
@@ -21,9 +16,7 @@ module full_adder_dataflow(
     assign cout = (a & b) | (b & cin) | (a & cin);    
 endmodule
 
-// ---------------------------
-// 3. Structural Modeling
-// ---------------------------
+
 module full_adder_structural(
     input a, b, cin,
     output sum, cout
